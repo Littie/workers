@@ -13,7 +13,7 @@ php bin/console
 *  can:manager  ability
 *  can:tester ability
 
-Possible abilities: 
+**Possible abilities:** 
 - conversationWithManager
 - draw
 - setTasks
@@ -21,7 +21,7 @@ Possible abilities:
 - writeCode
 
 **Get worker's abilities list**
-*  worker:designer   Describe designer abilities
-*  worker:developer  Describe developer abilities
-*  worker:manager    Describe manager abilities
-*  worker:tester     Describe tester abilities
+*  worker:designer
+*  worker:developer
+*  worker:manager
+*  worker:tester
