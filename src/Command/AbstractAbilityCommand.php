@@ -17,7 +17,7 @@ abstract class AbstractAbilityCommand extends AbstractCommand
     /**
      * Configures the current command.
      */
-    protected function configure()
+    protected function configure(): void
     {
         $position = $this->getPosition();
 
@@ -32,7 +32,7 @@ abstract class AbstractAbilityCommand extends AbstractCommand
      *
      * @return int
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $position = PositionFactory::getPosition($this->getPosition());
         $ability  = AbilityFactory::getAbility($input->getArgument('ability'));
