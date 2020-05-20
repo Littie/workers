@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use App\Command\Description\DesignerCommand as DesignerDescriptionCommand;
+use App\Command\Description\DeveloperCommand as DeveloperDescriptionCommand;
+use App\Command\Description\ManagerCommand as ManagerDescriptionCommand;
+use App\Command\Description\TesterCommand as TesterDescriptionCommand;
+use App\Command\Ability\DesignerCommand as DesignerAbilityCommand;
+use App\Command\Ability\DeveloperCommand as DeveloperAbilityCommand;
+use App\Command\Ability\ManagerCommand as ManagerAbilityCommand;
+use App\Command\Ability\TesterCommand as TesterAbilityCommand;
+
+$application = new Application();
+
+$application->add(new DesignerDescriptionCommand());
+$application->add(new DeveloperDescriptionCommand());
+$application->add(new ManagerDescriptionCommand());
+$application->add(new TesterDescriptionCommand());
+$application->add(new DesignerAbilityCommand());
+$application->add(new DeveloperAbilityCommand());
+$application->add(new ManagerAbilityCommand());
+$application->add(new TesterAbilityCommand());
+
+$application->run();

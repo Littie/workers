@@ -1,0 +1,18 @@
+{
+    "name": "a.polikarpov/together",
+    "description": "Describe types of workers",
+    "authors": [
+        {
+            "name": "a.polikarpov",
+            "email": "polik.palam@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
