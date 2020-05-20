@@ -7,7 +7,7 @@ php bin/console
 ```
 ## Command list
 
-###Check if worker has specific ability
+### Check if worker has specific ability
 *  can:designer ability
 *  can:developer ability
 *  can:manager  ability
@@ -20,7 +20,7 @@ php bin/console
 - testCode
 - writeCode
 
-###Get worker's abilities list
+### Get worker's abilities list
 *  worker:designer
 *  worker:developer
 *  worker:manager
