@@ -21,19 +21,19 @@ class AbilityFactory
     public static function getAbility(string $name): ?Ability
     {
         switch ($name) {
-            case 'conversationWithManager':
+            case Ability::CONVERSATION_WITH_MANAGER:
                 return new ConversationWithManager();
                 break;
-            case 'draw':
+            case Ability::DRAW:
                 return new Draw();
                 break;
-            case 'setTasks':
+            case Ability::SET_TASKS:
                 return new SetTasks();
                 break;
-            case 'testCode':
+            case Ability::TEST_CODE:
                 return new TestCode();
                 break;
-            case 'writeCode':
+            case Ability::WRITE_CODE:
                 return new WriteCode();
                 break;
             default:

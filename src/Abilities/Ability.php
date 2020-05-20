@@ -12,7 +12,6 @@ interface Ability
     const TEST_CODE = 'testCode';
     const WRITE_CODE = 'writeCode';
 
-
     /**
      * @return string
      */
