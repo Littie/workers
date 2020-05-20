@@ -12,7 +12,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-abstract class  AbstractAbilityCommand extends AbstractCommand
+abstract class AbstractAbilityCommand extends AbstractCommand
 {
     /**
      * Configures the current command.
@@ -21,8 +21,8 @@ abstract class  AbstractAbilityCommand extends AbstractCommand
     {
         $position = $this->getPosition();
 
-        $this->setName('can:' . $position)
-            ->setDescription('Check if ' . $position . ' has ability')
+        $this->setName("can:{$position}")
+            ->setDescription("Check if {$position} has ability")
             ->addArgument('ability', InputArgument::REQUIRED, 'Enter ability name');
     }
 

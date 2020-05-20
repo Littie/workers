@@ -16,8 +16,10 @@ abstract class AbstractDescriptionCommand extends AbstractCommand
      */
     protected function configure()
     {
-        $this->setName('worker:' . $this->getPosition())
-            ->setDescription('Describe ' . $this->getPosition() . ' abilities');
+        $position = $this->getPosition();
+
+        $this->setName("worker:{$position}")
+            ->setDescription("Describe {$position} abilities");
     }
 
     /**
