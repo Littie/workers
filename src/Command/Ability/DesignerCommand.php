@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Command\Ability;
 
 use App\Command\AbstractAbilityCommand;
+use App\Positions\Position;
 
 class DesignerCommand extends AbstractAbilityCommand
 {
@@ -13,6 +14,6 @@ class DesignerCommand extends AbstractAbilityCommand
      */
     protected function getPosition(): string
     {
-        return 'designer';
+        return Position::DESIGNER;
     }
 }
