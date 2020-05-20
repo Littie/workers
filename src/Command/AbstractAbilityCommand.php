@@ -7,7 +7,7 @@ namespace App\Command;
 use App\Abilities\Ability;
 use App\Factory\AbilityFactory;
 use App\Factory\PositionFactory;
-use App\Positions\Position;
+use App\Workers\Position;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -62,7 +62,7 @@ abstract class AbstractAbilityCommand extends AbstractCommand
     }
 
     /**
-     * @param \App\Positions\Position                           $position
+     * @param \App\Workers\Position                             $position
      * @param \App\Abilities\Ability                            $ability
      * @param \Symfony\Component\Console\Output\OutputInterface $output
      */

@@ -4,18 +4,18 @@ declare(strict_types=1);
 
 namespace App\Factory;
 
-use App\Positions\Position;
+use App\Workers\Position;
 
 class PositionFactory
 {
     /**
      * @param string $name
      *
-     * @return \App\Positions\Position|null
+     * @return \App\Workers\Position|null
      */
     public static function getPosition(string $name): ?Position
     {
-        $class = 'App\\Positions\\' . $name;
+        $class = 'App\\Workers\\' . $name;
 
         if (\class_exists($class)) {
             return new $class();

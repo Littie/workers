@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Positions;
+namespace App\Workers;
 
 use App\Abilities\SetTasks;
 

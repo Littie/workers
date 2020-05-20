@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Command;
 
 use App\Factory\PositionFactory;
-use App\Positions\Position;
+use App\Workers\Position;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -52,7 +52,7 @@ abstract class AbstractDescriptionCommand extends AbstractCommand
     }
 
     /**
-     * @param \App\Positions\Position                           $position
+     * @param \App\Workers\Position                             $position
      * @param \Symfony\Component\Console\Output\OutputInterface $output
      */
     protected function writeAbilities(Position $position, OutputInterface $output): void
